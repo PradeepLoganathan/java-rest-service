@@ -1,0 +1,30 @@
+POST http://customer-profile-application-ns.tap.mytanzudev.com/api/customer-profiles
+Content-Type: application/json
+
+{
+  "email": "pradeep@acme.com",
+  "firstName": "Pradeep",
+  "lastName": "Loganathan"
+}
+
+POST http://customer-profile-application-ns.tap.mytanzudev.com/api/customer-profiles
+Content-Type: application/json
+
+{
+  "email": "john.doe@acme.com",
+  "firstName": "John",
+  "lastName": "Doe"
+}
+
+DELETE http://customer-profile-application-ns.tap.mytanzudev.com/api/customer-profiles/305b5230-fde9-42ed-a5c0-e6a31ca1a607 HTTP/1.1
+Content-Type: application/json
+
+
+
+
+
+GET http://customer-profile-application-ns.tap.mytanzudev.com/api/customer-profiles HTTP/1.1
+
+GET http://customer-profile-application-ns.tap.mytanzudev.com/api/customer-profiles/cc54e5cd-03b4-4889-9b0f-1e4cfba3ce4f HTTP/1.1
+
+GET http://customer-profile-application-ns.tap.mytanzudev.com/api/customer-profiles/305b5230-fde9-42ed-a5c0-e6a31ca1a607 HTTP/1.1
