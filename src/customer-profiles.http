@@ -34,4 +34,17 @@ GET http://customer-profile-application-ns.tap.mytanzudev.com/api/customer-profi
 
 
 ###
-GET http://localhost:5432/api/customer-profiles HTTP/1.1
+GET http://localhost:8080/api/customer-profiles HTTP/1.1
+
+###
+POST http://localhost:8080/api/customer-profiles
+Content-Type: application/json
+
+{
+  "email": "pradeep@acme.com",
+  "firstName": "Pradeep",
+  "lastName": "Loganathan"
+}
+
+###
+GET http://localhost:8080/api/mycustom HTTP/1.1

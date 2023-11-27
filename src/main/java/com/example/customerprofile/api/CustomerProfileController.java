@@ -132,4 +132,17 @@ public class CustomerProfileController {
         List<CustomerProfileResponse> all = service.getAll().collect(Collectors.toList());
         return ResponseEntity.ok(all);
     }
+
+    @Operation(summary = "test endpoint.", method = "GET", tags = "Custom endpoint")
+    @ApiResponses({
+            @ApiResponse(
+                    responseCode = "200",
+                    description = "custom endpoint retrieved successfully."
+            )
+    })
+    @Transactional(readOnly = true)
+    @GetMapping({ "/mycustom" })
+    public ResponseEntity<String> getmyCustom() {
+        return ResponseEntity.ok("my custom");
+    }
 }
